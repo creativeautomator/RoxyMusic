@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROXY — Music Scoring Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Phosphate&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#4B4B4D;
+    --panel:#565658;
+    --panel-hover:#616163;
+    --ink:#DA8CAB;
+    --ink-soft:#B08C9C;
+    --line:#6A6A6C;
+    --amber:#D06E92;
+    --amber-soft:#55343E;
+    --teal:#E3B9CA;
+    --teal-soft:#4A3B40;
+    --danger:#E08080;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .reel-texture{
+    position:fixed; inset:0; pointer-events:none; z-index:0; opacity:0.05;
+    background-image: repeating-linear-gradient(0deg, #000 0px, #000 1px, transparent 1px, transparent 3px);
+  }
+  header{
+    position:relative; z-index:1;
+    padding:36px 40px 24px;
+    border-bottom:1px solid var(--line);
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px; letter-spacing:0.16em; text-transform:uppercase;
+    color:var(--amber); font-weight:600; margin:0 0 8px;
+  }
+  h1{
+    font-family:'Phosphate', 'Zilla Slab', serif; letter-spacing:0.02em; font-weight:700;
+    font-size:38px; margin:0 0 6px; letter-spacing:-0.01em;
+  }
+  .sub{
+    color:var(--ink-soft); font-size:14.5px; margin:0; max-width:560px; line-height:1.5;
+  }
+  .stats{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft);
+    margin-top:16px; display:flex; gap:18px; flex-wrap:wrap;
+  }
+  .stats b{color:var(--ink); font-weight:600;}
+
+  .layout{
+    display:grid; grid-template-columns:250px 1fr;
+    position:relative; z-index:1;
+    max-width:1240px; margin:0 auto;
+  }
+  @media (max-width:860px){ .layout{grid-template-columns:1fr;} }
+
+  aside{
+    padding:28px 24px; border-right:1px solid var(--line);
+  }
+  @media (max-width:860px){ aside{border-right:none; border-bottom:1px solid var(--line);} }
+
+  .search-box{
+    display:flex; align-items:center; gap:8px;
+    background:var(--panel); border:1px solid var(--line); border-radius:6px;
+    padding:9px 12px; margin-bottom:24px;
+  }
+  .search-box input{
+    border:none; background:transparent; outline:none; font-family:'IBM Plex Sans';
+    font-size:13.5px; color:var(--ink); width:100%;
+  }
+  .search-box svg{flex-shrink:0; opacity:0.5;}
+
+  .filter-group{margin-bottom:22px;}
+  .filter-group h4{
+    font-family:'IBM Plex Mono', monospace; font-size:10.5px; letter-spacing:0.1em;
+    text-transform:uppercase; color:var(--ink-soft); margin:0 0 10px; font-weight:600;
+  }
+  .chip{
+    display:inline-flex; align-items:center; gap:6px;
+    font-size:12.5px; padding:5px 10px; margin:0 6px 6px 0;
+    border:1px solid var(--line); border-radius:100px; cursor:pointer;
+    background:var(--panel); color:var(--ink-soft); transition:all .15s ease;
+    user-select:none;
+  }
+  .chip:hover{background:var(--panel-hover); color:var(--ink);}
+  .chip.active{
+    background:var(--ink); border-color:var(--ink); color:var(--cream);
+  }
+  .chip.active.teal{background:var(--teal); border-color:var(--teal);}
+  .chip.active.amber{background:var(--amber); border-color:var(--amber);}
+  .clear-filters{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--amber);
+    cursor:pointer; background:none; border:none; padding:0; margin-top:4px;
+    text-decoration:underline; text-underline-offset:2px; display:none;
+  }
+  .clear-filters.show{display:inline-block;}
+
+  main{padding:28px 32px 60px;}
+
+  .sort-row{
+    display:flex; justify-content:flex-end; align-items:center; gap:8px;
+    margin-bottom:14px; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft);
+  }
+  .sort-row select{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink);
+    background:var(--panel); border:1px solid var(--line); border-radius:5px; padding:5px 8px;
+  }
+
+  .track-list{display:flex; flex-direction:column; gap:8px;}
+
+  .track-row{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:14px 16px;
+    display:grid;
+    grid-template-columns:44px 1.6fr 1fr 70px 60px 100px;
+    align-items:center;
+    gap:14px;
+    transition:background .15s ease, border-color .15s ease;
+  }
+  .track-row:hover{background:var(--panel-hover); border-color:#75757A;}
+  .track-row.playing{border-color:var(--amber); background:#5E3E4E;}
+  @media (max-width:860px){
+    .track-row{grid-template-columns:40px 1fr; grid-template-areas:"play title" "play meta" "play tags"; row-gap:6px;}
+    .track-row .col-meta{grid-area:meta;}
+    .track-row .col-title{grid-area:title;}
+    .track-row .col-tags{grid-area:tags;}
+    .track-row .col-tempo, .track-row .col-duration, .track-row .col-license{display:none;}
+  }
+
+  .play-btn{
+    width:40px; height:40px; border-radius:50%;
+    background:#3A3A3C; border:none; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    color:var(--ink); flex-shrink:0; position:relative;
+    transition:background .15s ease;
+  }
+  .play-btn:hover{background:var(--amber); color:#2B2B2D;}
+  .track-row.playing .play-btn{background:var(--amber); color:#2B2B2D;}
+  .play-btn svg{width:15px; height:15px;}
+
+  .vu-bars{
+    display:flex; align-items:flex-end; gap:2px; height:14px;
+  }
+  .vu-bars span{
+    width:3px; background:var(--cream); border-radius:1px;
+    animation: vu 0.9s ease-in-out infinite;
+  }
+  .vu-bars span:nth-child(1){height:40%; animation-delay:0s;}
+  .vu-bars span:nth-child(2){height:100%; animation-delay:0.15s;}
+  .vu-bars span:nth-child(3){height:65%; animation-delay:0.3s;}
+  @keyframes vu{
+    0%,100%{transform:scaleY(0.4);}
+    50%{transform:scaleY(1);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .vu-bars span{animation:none;}
+  }
+
+  .col-title .title{
+    font-family:'Phosphate', 'Zilla Slab', serif; letter-spacing:0.02em; font-weight:600; font-size:16.5px; margin:0 0 3px;
+  }
+  .col-tags{display:flex; flex-wrap:wrap; gap:5px;}
+  .tag{
+    font-size:11px; padding:3px 8px; border-radius:100px;
+    background:var(--teal-soft); color:var(--teal); font-weight:500;
+    white-space:nowrap;
+  }
+
+  .col-tempo, .col-duration{
+    font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--ink-soft); text-align:right;
+  }
+  .col-tempo b, .col-duration b{color:var(--ink); font-weight:600; display:block; font-size:14px;}
+  .col-tempo span, .col-duration span{font-size:10px; text-transform:uppercase; letter-spacing:0.06em;}
+
+  .license-badge{
+    font-family:'IBM Plex Mono', monospace; font-size:10.5px; padding:4px 8px;
+    border-radius:4px; text-align:center; font-weight:600; letter-spacing:0.02em;
+    white-space:nowrap;
+  }
+  .license-royalty-free{background:var(--teal-soft); color:var(--teal);}
+  .license-licensed{background:#3A3550; color:#C9BEEF;}
+  .license-in-house-original{background:var(--amber-soft); color:var(--amber);}
+  .license-expiring{background:#5A2C2C; color:var(--danger);}
+
+  .seek-row{
+    grid-column:1 / -1; display:none; align-items:center; gap:10px; margin-top:10px;
+    padding-top:10px; border-top:1px dashed var(--line);
+  }
+  .track-row.playing .seek-row{display:flex;}
+  .seek-row input[type=range]{flex:1; accent-color:var(--amber);}
+  .seek-row .time{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); min-width:36px;}
+
+  .empty-state{
+    text-align:center; padding:70px 20px; color:var(--ink-soft);
+  }
+  .empty-state .glyph{font-size:34px; margin-bottom:10px;}
+  .empty-state h3{font-family:'Phosphate', 'Zilla Slab', serif; letter-spacing:0.02em; color:var(--ink); margin:0 0 6px;}
+
+  footer{
+    text-align:center; padding:24px; font-family:'IBM Plex Mono', monospace;
+    font-size:11px; color:var(--ink-soft); border-top:1px solid var(--line);
+  }
+</style>
+</head>
+<body>
+<div class="reel-texture"></div>
+
+<header>
+  <h1>ROXY</h1>
+  <p class="sub">Your ultimate catalog of internally produced music scores available for use across video executions.</p>
+  <div class="stats" id="statsRow"></div>
+</header>
+
+<div class="layout">
+  <aside>
+    <div class="search-box">
+      <svg viewBox="0 0 20 20" fill="none" width="16" height="16"><circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.6"/><path d="M14 14L18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <input type="text" id="searchInput" placeholder="Search title, tag, used-in…">
+    </div>
+
+    <div class="filter-group">
+      <h4>Mood / Genre</h4>
+      <div id="moodFilters"></div>
+    </div>
+
+    <div class="filter-group">
+      <h4>Licensing</h4>
+      <div id="licenseFilters"></div>
+    </div>
+
+    <div class="filter-group">
+      <h4>Source Library</h4>
+      <div id="sourceFilters"></div>
+    </div>
+
+    <button class="clear-filters" id="clearFilters">Clear all filters</button>
+  </aside>
+
+  <main>
+    <div class="sort-row">
+      <label for="sortSelect">Sort by</label>
+      <select id="sortSelect">
+        <option value="recent">Recently added</option>
+        <option value="title">Title (A–Z)</option>
+        <option value="tempo">Tempo (fastest)</option>
+        <option value="duration">Duration (longest)</option>
+      </select>
+    </div>
+
+    <div class="track-list" id="trackList"></div>
+    <div class="empty-state" id="emptyState" style="display:none;">
+      <div class="glyph">♪</div>
+      <h3>No scores match your filters</h3>
+      <p>Try clearing a filter or searching a different term.</p>
+    </div>
+  </main>
+</div>
+
+<footer>ROXY — for internal creative reference and licensing lookup only.</footer>
+
+<script src="data.js"></script>
+<script>
+(function(){
+  const DATA = window.MUSIC_DATA || [];
+  const state = { search:'', mood:null, license:null, source:null, sort:'recent', playingId:null };
+  let currentAudio = null;
+
+  function fmtDuration(sec){
+    const m = Math.floor(sec/60), s = sec%60;
+    return m + ':' + String(s).padStart(2,'0');
+  }
+  function licenseClass(lic){
+    return 'license-' + lic.toLowerCase().replace(/\s+/g,'-');
+  }
+  function uniqueSorted(list){ return [...new Set(list)].sort(); }
+
+  function buildFilterChips(containerId, values, key, colorClass){
+    const el = document.getElementById(containerId);
+    el.innerHTML = '';
+    values.forEach(v=>{
+      const chip = document.createElement('button');
+      chip.className = 'chip' + (state[key]===v ? ' active '+colorClass : '');
+      chip.textContent = v;
+      chip.onclick = ()=>{ state[key] = state[key]===v ? null : v; render(); };
+      el.appendChild(chip);
+    });
+  }
+
+  function matchesFilters(track){
+    if(state.mood && !track.moodGenre.includes(state.mood)) return false;
+    if(state.license && track.licensing !== state.license) return false;
+    if(state.source && track.sourceLibrary !== state.source) return false;
+    if(state.search){
+      const q = state.search.toLowerCase();
+      const hay = [track.title, ...track.moodGenre, track.sourceLibrary, ...track.instrumentation].join(' ').toLowerCase();
+      if(!hay.includes(q)) return false;
+    }
+    return true;
+  }
+
+  function sortTracks(list){
+    const arr = [...list];
+    switch(state.sort){
+      case 'title': arr.sort((a,b)=>a.title.localeCompare(b.title)); break;
+      case 'tempo': arr.sort((a,b)=>b.tempoBpm-a.tempoBpm); break;
+      case 'duration': arr.sort((a,b)=>b.durationSec-a.durationSec); break;
+      default: arr.sort((a,b)=> new Date(b.dateAdded) - new Date(a.dateAdded));
+    }
+    return arr;
+  }
+
+  function stopAudio(){
+    if(currentAudio){ currentAudio.pause(); currentAudio = null; }
+    state.playingId = null;
+  }
+
+  function renderStats(filtered){
+    const el = document.getElementById('statsRow');
+    el.innerHTML = `<span><b>${filtered.length}</b> of ${DATA.length} scores shown</span>` +
+      `<span><b>${uniqueSorted(DATA.flatMap(t=>t.moodGenre)).length}</b> mood tags</span>` +
+      `<span><b>${uniqueSorted(DATA.map(t=>t.sourceLibrary)).length}</b> source libraries</span>`;
+  }
+
+  function render(){
+    const filtered = sortTracks(DATA.filter(matchesFilters));
+    renderStats(filtered);
+
+    buildFilterChips('moodFilters', uniqueSorted(DATA.flatMap(t=>t.moodGenre)), 'mood', 'teal');
+    buildFilterChips('licenseFilters', uniqueSorted(DATA.map(t=>t.licensing)), 'license', 'amber');
+    buildFilterChips('sourceFilters', uniqueSorted(DATA.map(t=>t.sourceLibrary)), 'source', 'teal');
+
+    document.getElementById('clearFilters').classList.toggle('show', !!(state.mood||state.license||state.source||state.search));
+
+    const list = document.getElementById('trackList');
+    const empty = document.getElementById('emptyState');
+    list.innerHTML = '';
+
+    if(filtered.length===0){ empty.style.display='block'; return; }
+    empty.style.display='none';
+
+    filtered.forEach(track=>{
+      const row = document.createElement('div');
+      row.className = 'track-row' + (state.playingId===track.id ? ' playing' : '');
+      row.innerHTML = `
+        <button class="play-btn" style="grid-area:play" aria-label="Play ${track.title}">
+          ${state.playingId===track.id
+            ? '<div class="vu-bars"><span></span><span></span><span></span></div>'
+            : '<svg viewBox="0 0 20 20" fill="currentColor"><path d="M6 4.5v11l9-5.5-9-5.5z"/></svg>'}
+        </button>
+        <div class="col-title">
+          <p class="title">${track.title}</p>
+        </div>
+        <div class="col-tags">
+          ${track.moodGenre.map(m=>`<span class="tag">${m}</span>`).join('')}
+        </div>
+        <div class="col-tempo"><b>${track.tempoBpm||'—'}</b><span>BPM</span></div>
+        <div class="col-duration"><b>${fmtDuration(track.durationSec)}</b><span>min</span></div>
+        <div><span class="license-badge ${licenseClass(track.licensing)}">${track.licensing}</span></div>
+        <div class="seek-row">
+          <span class="time" data-cur>0:00</span>
+          <input type="range" data-seek min="0" max="100" value="0">
+          <span class="time" data-total>${fmtDuration(track.durationSec)}</span>
+        </div>
+      `;
+
+      const playBtn = row.querySelector('.play-btn');
+      playBtn.onclick = ()=> togglePlay(track, row);
+
+      const seek = row.querySelector('[data-seek]');
+      seek.oninput = ()=>{
+        if(currentAudio && state.playingId===track.id){
+          currentAudio.currentTime = (seek.value/100) * currentAudio.duration;
+        }
+      };
+
+      list.appendChild(row);
+    });
+  }
+
+  function togglePlay(track, row){
+    if(state.playingId === track.id){
+      stopAudio();
+      render();
+      return;
+    }
+    stopAudio();
+    const audio = new Audio(track.audioFile);
+    currentAudio = audio;
+    state.playingId = track.id;
+    render();
+
+    const activeRow = [...document.querySelectorAll('.track-row')].find(r=>r.classList.contains('playing'));
+    audio.addEventListener('timeupdate', ()=>{
+      if(!activeRow) return;
+      const seek = activeRow.querySelector('[data-seek]');
+      const cur = activeRow.querySelector('[data-cur]');
+      if(audio.duration){
+        seek.value = (audio.currentTime/audio.duration)*100;
+        cur.textContent = fmtDuration(Math.floor(audio.currentTime));
+      }
+    });
+    audio.addEventListener('ended', ()=>{ stopAudio(); render(); });
+    audio.play().catch(()=>{
+      alert('Could not play "'+track.title+'". Check that the audio file exists at: '+track.audioFile);
+      stopAudio(); render();
+    });
+  }
+
+  document.getElementById('searchInput').addEventListener('input', e=>{ state.search = e.target.value; render(); });
+  document.getElementById('sortSelect').addEventListener('change', e=>{ state.sort = e.target.value; render(); });
+  document.getElementById('clearFilters').addEventListener('click', ()=>{
+    state.search=''; state.mood=null; state.license=null; state.source=null;
+    document.getElementById('searchInput').value='';
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
