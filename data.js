@@ -591,7 +591,8 @@ window.MUSIC_DATA = [
     "id": "MS044",
     "title": "Copy of INT_COMEDY_Bloopers_2020_MPC_WFH_BPG",
     "moodGenre": [
-      "Comedic. Funny"
+      "Comedic",
+      "Funny"
     ],
     "tempoBpm": 0,
     "durationSec": 125,
@@ -3030,7 +3031,7 @@ window.MUSIC_DATA = [
     "moodGenre": [
       "Happy",
       "Kiddie",
-      "MvcDo"
+      "McDo"
     ],
     "tempoBpm": 0,
     "durationSec": 83,
