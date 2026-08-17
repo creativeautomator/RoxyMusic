@@ -430,7 +430,7 @@
   function buildGenreFilters(){
     const counts = {};
     DATA.forEach(t=> t.moodGenre.forEach(g=>{ counts[g] = (counts[g]||0)+1; }));
-    const sorted = Object.entries(counts).sort((a,b)=> b[1]-a[1]);
+    const sorted = Object.entries(counts).sort((a,b)=> a[0].localeCompare(b[0]));
     const el = document.getElementById('genreFilters');
     el.innerHTML = '';
     if(sorted.length === 0){
