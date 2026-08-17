@@ -2498,7 +2498,7 @@ window.MUSIC_DATA = [
     "id": "MS185",
     "title": "INT lifestyle 02 RBL",
     "moodGenre": [
-      "lifestyle",
+      "Lifestyle",
       "Magazine",
       "Beauty"
     ],
