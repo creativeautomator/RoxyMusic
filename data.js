@@ -1265,7 +1265,7 @@ window.MUSIC_DATA = [
       "Guitar"
     ],
     "tempoBpm": 0,
-    "durationSec": 0,
+    "durationSec": 107,
     "instrumentation": [],
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQBceoPXu9JzTrzZ43bTr0PNATtqDEALq7hJCLzIjSsf1R8?download=1",
     "notes": "",
@@ -1400,19 +1400,6 @@ window.MUSIC_DATA = [
     "durationSec": 90,
     "instrumentation": [],
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQAWCwgYs4lQQ5ALciQjbt63AckIbO16x3BUR1G2-Pi__EM?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-13"
-  },
-  {
-    "id": "MS104",
-    "title": "INT dEDMa RBL",
-    "moodGenre": [
-      "Hiphop"
-    ],
-    "tempoBpm": 128,
-    "durationSec": 62,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQDF6UKx1WO-SaW7as6kO0D0ARRq1eAy853OrLt2QumL_2E?download=1",
     "notes": "",
     "dateAdded": "2026-08-13"
   },
@@ -1625,26 +1612,13 @@ window.MUSIC_DATA = [
     "dateAdded": "2026-08-13"
   },
   {
-    "id": "MS121",
-    "title": "INT HORSUS TALIKOD MPC WFH BPG (1)",
-    "moodGenre": [
-      "Horror"
-    ],
-    "tempoBpm": 100,
-    "durationSec": 111,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQCt_G1-t7BsQIXjHfLyPO_AAfHnu5-5h71_JiOsq-r35Gk?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-13"
-  },
-  {
     "id": "MS122",
     "title": "INT HORSUS TALIKOD MPC WFH BPG",
     "moodGenre": [
       "Horror"
     ],
     "tempoBpm": 0,
-    "durationSec": 0,
+    "durationSec": 111,
     "instrumentation": [],
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQCdGIlmTvWWSampMCjKfmulAfjl7w9Sqy-Jz8z8sSU_RgM?download=1",
     "notes": "",
@@ -1801,7 +1775,7 @@ window.MUSIC_DATA = [
       "Calm"
     ],
     "tempoBpm": 97,
-    "durationSec": 0,
+    "durationSec": 134,
     "instrumentation": [],
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQBGH8RmaTHoSoR1ZUYtCrASASaVgVW1ANleja_zpi9HAvI?download=1",
     "notes": "",
@@ -2275,7 +2249,7 @@ window.MUSIC_DATA = [
       "Kiddie"
     ],
     "tempoBpm": 115,
-    "durationSec": 0,
+    "durationSec": 93,
     "instrumentation": [],
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQDVTN3QoX7jTINIZDZcPjv2AXe_B9VJOhKc3hC0IITQFgU?download=1",
     "notes": "",
@@ -2463,7 +2437,10 @@ window.MUSIC_DATA = [
   {
     "id": "MS181",
     "title": "INT_HALFWAY_JGF_WFH_BPG",
-    "moodGenre": [],
+    "moodGenre": [
+      "Upbeat",
+      "Techno"
+    ],
     "tempoBpm": 0,
     "durationSec": 72,
     "instrumentation": [],
@@ -2528,21 +2505,6 @@ window.MUSIC_DATA = [
     "durationSec": 96,
     "instrumentation": [],
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQBhQ3DbbazARqR-04ne2bCdAQ-9iu2fjJzpxt7LhFbBQ1o?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-14"
-  },
-  {
-    "id": "MS186",
-    "title": "INT Lifestyle SarapBuhayYeah 2020 NAC WFH HAB",
-    "moodGenre": [
-      "Lifetsyle",
-      "Magazine",
-      "Beauty"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 141,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQCqNb_zHT9bTospS2SJdoy3AZwYEPtAlRWe9oZIiA3EIhA?download=1",
     "notes": "",
     "dateAdded": "2026-08-14"
   },
@@ -2693,22 +2655,6 @@ window.MUSIC_DATA = [
     "durationSec": 341,
     "instrumentation": [],
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQBLYAZ2j8H6S62OmvpawxvwATPdXRO-60nKP7nFAzq2ZGQ?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-14"
-  },
-  {
-    "id": "MS197",
-    "title": "INT first beso m10 JSM",
-    "moodGenre": [
-      "Love",
-      "Romance"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 97,
-    "instrumentation": [
-      "Guitar"
-    ],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQAA6CYfPuNhQp34AsR3H2ezAQHisZ9rlZ31yQwBTn9Q1IE?download=1",
     "notes": "",
     "dateAdded": "2026-08-14"
   },
@@ -3040,21 +2986,6 @@ window.MUSIC_DATA = [
     "durationSec": 135,
     "instrumentation": [],
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQBoBWwYbWloSI8dN5E7hi-LAap34uv4nyheU_n19e8D8qA?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-14"
-  },
-  {
-    "id": "MS222",
-    "title": "INT KIDDIE1 CGB ptmr anc",
-    "moodGenre": [
-      "Happy",
-      "Kiddie",
-      "McDo"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 104,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQAY0lIlLhSzQrljzLR4ZyFuAeVB3E3VudKACi6Yoajg-RM?download=1",
     "notes": "",
     "dateAdded": "2026-08-14"
   },
@@ -5133,22 +5064,6 @@ window.MUSIC_DATA = [
     "dateAdded": "2026-08-17"
   },
   {
-    "id": "MS367",
-    "title": "INT brand new life RBL",
-    "moodGenre": [
-      "Upbeat",
-      "AVP",
-      "Lifestyle",
-      "Techno"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 125,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQBqJNt2w6sxRKYADNhyeXpvASmVQPiAEL72sQtw3NPhN3c?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-17"
-  },
-  {
     "id": "MS368",
     "title": "INT change m6 JSM",
     "moodGenre": [
@@ -5188,20 +5103,6 @@ window.MUSIC_DATA = [
     "durationSec": 90,
     "instrumentation": [],
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQDiRhDB34waRLaty4BJi-TSAfoxd98wTZk6njbIMOVH4Nc?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-17"
-  },
-  {
-    "id": "MS371",
-    "title": "INT News Flash and Backflash ART",
-    "moodGenre": [
-      "News",
-      "Marketing"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 66,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQBsbBeEXSeZRbUhFqlA3oAwAQdiWhK2OBkI0lEjmdJl7fA?download=1",
     "notes": "",
     "dateAdded": "2026-08-17"
   },
@@ -5763,21 +5664,6 @@ window.MUSIC_DATA = [
     "dateAdded": "2026-08-17"
   },
   {
-    "id": "MS410",
-    "title": "INT TRAVEL FEATHERWEIGHT FGS PTMR ANC (30s)",
-    "moodGenre": [
-      "Upbeat",
-      "Travel",
-      "Lifestyle"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 30,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQCvo2LpO-AgTacNsGlTcV4mAV-XjClJ87z7I4cBkexnUH4?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-17"
-  },
-  {
     "id": "MS411",
     "title": "INT PLUGS Mariana Venti RAC",
     "moodGenre": [
@@ -5820,6 +5706,190 @@ window.MUSIC_DATA = [
     "durationSec": 32,
     "instrumentation": [],
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQAZV8cF8q_tTYFQyQYCVT92AaeDEs0apLZlxP4Wl5KrGW4?download=1",
+    "notes": "",
+    "dateAdded": "2026-08-17"
+  },
+  {
+    "id": "MS414",
+    "title": "INT PROJ 2012 CHRISTMAS 101 SLT pt3tet",
+    "moodGenre": [
+      "Christmas",
+      "Lifestyle"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 64,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQBk8aAewOT6QJwoImIKVlVWAZ5xUhL_wV-MSRGhEizvT0o?download=1",
+    "notes": "",
+    "dateAdded": "2026-08-17"
+  },
+  {
+    "id": "MS415",
+    "title": "int christmas happy silent night slt ptmr hab",
+    "moodGenre": [
+      "Christmas"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 159,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQAATg-PG6ZlQ58lfEYTS5NGAd1zmLhn0A9mYaoMKuW5FXI?download=1",
+    "notes": "",
+    "dateAdded": "2026-08-17"
+  },
+  {
+    "id": "MS416",
+    "title": "INT KIT Aysha Christmas AMRF ptmr hab",
+    "moodGenre": [
+      "Christmas"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 75,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQCcywQnQvVpR43--MQ0xWy5ATFMdzKrVk52QtD0Aztw694?download=1",
+    "notes": "",
+    "dateAdded": "2026-08-17"
+  },
+  {
+    "id": "MS417",
+    "title": "INT granehop JSM",
+    "moodGenre": [
+      "Techno",
+      "Tech"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 122,
+    "instrumentation": [
+      "Synth"
+    ],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQBC1u5p9SijTZ5wJ_qe_wxuAR26RhuMwNcM4ER_QgmkpwI?download=1",
+    "notes": "",
+    "dateAdded": "2026-08-17"
+  },
+  {
+    "id": "MS418",
+    "title": "INT trend shuttle JSM",
+    "moodGenre": [
+      "EDM",
+      "Techno"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 86,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQCiP1Az8dv_S6-PVeK16yzPAajwOv89-aeyhwOyqgjVhaM?download=1",
+    "notes": "",
+    "dateAdded": "2026-08-17"
+  },
+  {
+    "id": "MS419",
+    "title": "INT beatbot RBL",
+    "moodGenre": [
+      "Upbeat",
+      "Lifestyle",
+      "Fashion",
+      "Tech"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 62,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQB54gCVVPBRRJ_LqYT8gnlnAYheoJJuGh3K4hRB9rTgG3A?download=1",
+    "notes": "",
+    "dateAdded": "2026-08-17"
+  },
+  {
+    "id": "MS420",
+    "title": "INT tseeken JSM",
+    "moodGenre": [
+      "Upbeat",
+      "Cooking"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 123,
+    "instrumentation": [
+      "Percussion"
+    ],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQAIFgzdolUiRbBU1VYdnr7NAeFs6Y4ab9rahbI4FQt4Cyw?download=1",
+    "notes": "",
+    "dateAdded": "2026-08-17"
+  },
+  {
+    "id": "MS421",
+    "title": "INT zumba tsunami JSM",
+    "moodGenre": [
+      "Upbeat",
+      "Cooking"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 80,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQBmDlVpX562QY3JjMD6wFs5AbHAjcNe_i4pgN4Mf4Al2oE?download=1",
+    "notes": "",
+    "dateAdded": "2026-08-17"
+  },
+  {
+    "id": "MS422",
+    "title": "INT_COOK EATING SHOE_DJM _ptmr_hab.wav",
+    "moodGenre": [
+      "Cooking",
+      "Lifestyle"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 53,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQAIi5AQv8WvSr9Ym-dcf9-eAfzVzGhZRGldTKKDKLSbbPc?download=1",
+    "notes": "",
+    "dateAdded": "2026-08-17"
+  },
+  {
+    "id": "MS423",
+    "title": "INT LIB MAMBOO CGB ptmr anc",
+    "moodGenre": [
+      "Cooking",
+      "Lifestyle"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 53,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQAE_paKP26gTZfuKM0eVMTIASzPrxW9c8KsV1hY4FIpJVE?download=1",
+    "notes": "",
+    "dateAdded": "2026-08-17"
+  },
+  {
+    "id": "MS424",
+    "title": "INT zumzumi JSM",
+    "moodGenre": [
+      "Upbeat",
+      "Cooking"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 97,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQAOZQJdBlGiRZl3cyVpBxVJAZfNxQ4o51b4GnRkHZeSGRY?download=1",
+    "notes": "",
+    "dateAdded": "2026-08-17"
+  },
+  {
+    "id": "MS425",
+    "title": "INT NamamaskoSiAcoe NAC PTMR ANC2 (30s)",
+    "moodGenre": [
+      "Christmas"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 32,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQArBfoHDkuURYcrc9gZZg1YAfcGeHKGhDXfxy37ZiS6YLI?download=1",
+    "notes": "",
+    "dateAdded": "2026-08-17"
+  },
+  {
+    "id": "MS426",
+    "title": "INT Christmas Dance AMM ptmr hab (30s)",
+    "moodGenre": [
+      "Christmas"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 30,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQBskYx-lByEQoTIpIrwcPD7AcB3uq65yXiB6_MlYMWQYm8?download=1",
     "notes": "",
     "dateAdded": "2026-08-17"
   }
