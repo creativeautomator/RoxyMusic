@@ -19,7 +19,8 @@ window.MUSIC_DATA = [
     "title": "INT Alpha Arbutin ART",
     "moodGenre": [
       "Adventure",
-      "Upbeat Happy"
+      "Upbeat",
+      "Happy"
     ],
     "tempoBpm": 120,
     "durationSec": 75,
@@ -500,7 +501,7 @@ window.MUSIC_DATA = [
     "id": "MS038",
     "title": "INT CHINACHANCHUNG 2020 JBG WFH BPG",
     "moodGenre": [
-      "Ortiental"
+      "Oriental"
     ],
     "tempoBpm": 0,
     "durationSec": 82,
@@ -2378,7 +2379,7 @@ window.MUSIC_DATA = [
     "id": "MS177",
     "title": "INT AVERE LABBIOCCO 2020 FGS",
     "moodGenre": [
-      "Lifetsyle",
+      "Lifestyle",
       "Magazine",
       "Beauty"
     ],
