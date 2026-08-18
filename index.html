@@ -395,7 +395,7 @@
 
   function matchesFilters(track){
     if(state.favouriteOnly && !favourites.includes(track.id)) return false;
-    if(state.genres.size && ![...state.genres].some(g=>track.moodGenre.includes(g))) return false;
+    if(state.genres.size && ![...state.genres].some(g=>track.moodGenre.some(mg=>mg.toLowerCase()===g))) return false;
     if(state.formats.size && !state.formats.has(track.format)) return false;
     if(track.tempoBpm > 0 && (track.tempoBpm < state.bpmMin || track.tempoBpm > state.bpmMax)) return false;
     if(state.search){
@@ -429,7 +429,10 @@
 
   function buildGenreFilters(){
     const counts = {};
-    DATA.forEach(t=> t.moodGenre.forEach(g=>{ counts[g] = (counts[g]||0)+1; }));
+    DATA.forEach(t=> t.moodGenre.forEach(g=>{
+      const key = g.toLowerCase();
+      counts[key] = (counts[key]||0) + 1;
+    }));
     const sorted = Object.entries(counts).sort((a,b)=> a[0].localeCompare(b[0]));
     const el = document.getElementById('genreFilters');
     el.innerHTML = '';
@@ -440,7 +443,7 @@
     sorted.forEach(([g,count])=>{
       const row = document.createElement('label');
       row.className = 'checkbox-row';
-      row.innerHTML = `<div class="left"><input type="checkbox" data-genre="${g}"><span class="label">${g.toLowerCase()}</span></div><span class="count">${count}</span>`;
+      row.innerHTML = `<div class="left"><input type="checkbox" data-genre="${g}"><span class="label">${g}</span></div><span class="count">${count}</span>`;
       row.querySelector('input').checked = state.genres.has(g);
       row.querySelector('input').addEventListener('change', e=>{
         if(e.target.checked) state.genres.add(g); else state.genres.delete(g);
@@ -564,7 +567,7 @@
 
       row.innerHTML = `
         <div class="col-title">${track.title}</div>
-        <div class="col-tags">${track.moodGenre.join(', ')}</div>
+        <div class="col-tags">${track.moodGenre.map(g=>g.toLowerCase()).join(', ')}</div>
         <div class="col-bpm">${track.tempoBpm || '—'}</div>
         <div class="col-duration">${fmtDuration(track.durationSec)}</div>
         <div class="col-actions">
