@@ -6287,20 +6287,6 @@ window.MUSIC_DATA = [
     "dateAdded": "2026-08-26"
   },
   {
-    "id": "MS457",
-    "title": "20 Airplane,Jet 737 Ext Take Off",
-    "moodGenre": [
-      "SFX",
-      "Airplane"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 67,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQBky08kiTdQRLUgSBSgZ-PoAbWNffnt6pYOQPwffrJBgwE?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-26"
-  },
-  {
     "id": "MS458",
     "title": "Cartoons Pop CU HighPitch 1",
     "moodGenre": [
@@ -6709,20 +6695,6 @@ window.MUSIC_DATA = [
     "dateAdded": "2026-08-26"
   },
   {
-    "id": "MS488",
-    "title": "CHILDREN YEHEY",
-    "moodGenre": [
-      "SFX",
-      "Children"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 20,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQCf35GDhfFETZTsWPJj_Pn2AQFuhdDttyQ6RNk2c38XFjI?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-26"
-  },
-  {
     "id": "MS489",
     "title": "25 Audience Laughing 2",
     "moodGenre": [
@@ -6891,19 +6863,6 @@ window.MUSIC_DATA = [
     "durationSec": 3,
     "instrumentation": [],
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQAJjM1D3fNvRb5TuQsIocwZAajJTwBD_EQsthCx_qaKp7k?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-26"
-  },
-  {
-    "id": "MS502",
-    "title": "Doors DoorsOpen&Close MCU S copy",
-    "moodGenre": [
-      "SFX"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 78,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQDgqPHtvpzvQJqlB7LB1wjiAYPRtWoPD1bR5D7py2TUdU0?download=1",
     "notes": "",
     "dateAdded": "2026-08-26"
   },
@@ -7896,19 +7855,6 @@ window.MUSIC_DATA = [
     "dateAdded": "2026-08-26"
   },
   {
-    "id": "MS579",
-    "title": "50 Bells Small Bell Dings 2 Versions.L",
-    "moodGenre": [
-      "SFX"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 26,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQAZXaBNDg6gRbTMOjezhcJlAeIul_jVax1znSvcbJHMvVQ?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-26"
-  },
-  {
     "id": "MS580",
     "title": "54 Bells Bell Shakes 3 Versions",
     "moodGenre": [
@@ -7944,19 +7890,6 @@ window.MUSIC_DATA = [
     "durationSec": 40,
     "instrumentation": [],
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQCSHY9ao9exTZoi2jlpLpQoAeFSlFTIIUUvKXUby8L1j84?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-26"
-  },
-  {
-    "id": "MS583",
-    "title": "54 Bells Bell Shakes 3 Versions.R",
-    "moodGenre": [
-      "SFX"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 27,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQA9tysRgHXNQbG1Ydea63YgAZqn3GbtiSgfNiYS2gxidWA?download=1",
     "notes": "",
     "dateAdded": "2026-08-26"
   },
@@ -8087,19 +8020,6 @@ window.MUSIC_DATA = [
     "durationSec": 0,
     "instrumentation": [],
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQBHypD_y75qTb63no3IHEPJAYEW9m5o_cxxbD0_3MAgYtI?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-26"
-  },
-  {
-    "id": "MS594",
-    "title": "ssshhh.wav",
-    "moodGenre": [
-      "SFX"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 21,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQD3TQZzr1s0T6rjEqkDd4jWAW7jouWKybe36nUVxPNxHT8?download=1",
     "notes": "",
     "dateAdded": "2026-08-26"
   },
@@ -8338,45 +8258,6 @@ window.MUSIC_DATA = [
     "dateAdded": "2026-08-26"
   },
   {
-    "id": "MS613",
-    "title": "Magic Appear01",
-    "moodGenre": [
-      "SFX"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 2,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQC6uyKhhnqyQJMML12Oah_NAakBqV3zqaQXzMWSPsuERnE?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-26"
-  },
-  {
-    "id": "MS614",
-    "title": "Magic Appear02",
-    "moodGenre": [
-      "SFX"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 3,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQC9kxst8H_9TKpaXomQRuLVAfzmC8FeCt7UyPvWGpI6PJY?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-26"
-  },
-  {
-    "id": "MS615",
-    "title": "Magic Appear03",
-    "moodGenre": [
-      "SFX"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 3,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQBRq228UY9IRrbm-gtFMf2OAaApKZ8Ivx935nvw7_5xTpo?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-26"
-  },
-  {
     "id": "MS616",
     "title": "Magic Spell Heal1",
     "moodGenre": [
@@ -8386,19 +8267,6 @@ window.MUSIC_DATA = [
     "durationSec": 2,
     "instrumentation": [],
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQCsjOAnKCBkSIP3oRC29znNAYiq6l9sCK0RoiQmraGmBv8?download=1",
-    "notes": "",
-    "dateAdded": "2026-08-26"
-  },
-  {
-    "id": "MS617",
-    "title": "Magic Spell Heal3",
-    "moodGenre": [
-      "SFX"
-    ],
-    "tempoBpm": 0,
-    "durationSec": 2,
-    "instrumentation": [],
-    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQDJosxCyuMBQLmWrmYXauDMAePwMZR-urvet5vhNvrNocQ?download=1",
     "notes": "",
     "dateAdded": "2026-08-26"
   },
