@@ -4973,7 +4973,7 @@ window.MUSIC_DATA = [
     "moodGenre": [
       "Happy",
       "Upbeat",
-      "Chillin"
+      "Chill"
     ],
     "tempoBpm": 0,
     "durationSec": 126,
@@ -5225,7 +5225,7 @@ window.MUSIC_DATA = [
     "moodGenre": [
       "Lifestyle",
       "Happy",
-      "Comic"
+      "Comedic"
     ],
     "tempoBpm": 0,
     "durationSec": 100,
@@ -6727,7 +6727,7 @@ window.MUSIC_DATA = [
     "title": "32 Audience Laughing With Applause",
     "moodGenre": [
       "SFX",
-      "Audienc Laughing"
+      "Audience Laughing"
     ],
     "tempoBpm": 0,
     "durationSec": 10,
@@ -8125,7 +8125,7 @@ window.MUSIC_DATA = [
     "id": "MS602",
     "title": "02020901",
     "moodGenre": [
-      "SFGX",
+      "SFX",
       "Stinger"
     ],
     "tempoBpm": 0,
