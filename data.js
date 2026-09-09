@@ -8594,5 +8594,81 @@ window.MUSIC_DATA = [
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQCbWfN1I33qSrXUYng4_fZmAb1OedCYiQsm5NXDpykxF7c?download=1",
     "notes": "",
     "dateAdded": "2026-08-26"
+  },
+  {
+    "id": "MS643",
+    "title": "INT Creeky JLC GNC AAM",
+    "moodGenre": [
+      "EDM",
+      "Upbeat",
+      "Dance"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 83,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQB8t4OKvV3HT4LJ5e4rIa5IAcYzHOb3mJnhRpuDMQDKGUs?download=1",
+    "notes": "",
+    "dateAdded": "2026-09-09"
+  },
+  {
+    "id": "MS644",
+    "title": "INT DJLOVE JPB EDM hab",
+    "moodGenre": [
+      "Techno",
+      "Upbeat",
+      "Dance"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 97,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQDEt74PDGJERa6vXJF9krQFARmT5V28FnxRA6toff1GGIM?download=1",
+    "notes": "",
+    "dateAdded": "2026-09-09"
+  },
+  {
+    "id": "MS645",
+    "title": "INT HACKING JLC WFH BPG",
+    "moodGenre": [
+      "Upbeat",
+      "Active",
+      "Investigative"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 72,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQACHA3xEYL5RK7YaGPkQoITASmu0jZJ2OUQHI-SJIjLmtg?download=1",
+    "notes": "",
+    "dateAdded": "2026-09-09"
+  },
+  {
+    "id": "MS646",
+    "title": "INT Liwaliw JLC WFH HAB",
+    "moodGenre": [
+      "Techno",
+      "Dance",
+      "Upbeat"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 84,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQBTM6MEpBfHQ6viT2BR0dnzARU_QPwRo4rzj5c4jfcwWRM?download=1",
+    "notes": "",
+    "dateAdded": "2026-09-09"
+  },
+  {
+    "id": "MS647",
+    "title": "INT PLUG Hop Stomp JLC WFH HAB",
+    "moodGenre": [
+      "Upbeat",
+      "Techno",
+      "Dance",
+      "Lifestyle"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 32,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQDfPGF2jhrLSaHKndWqpNJFAW3sEwOZ0WTmjxdITy3k24s?download=1",
+    "notes": "",
+    "dateAdded": "2026-09-09"
   }
 ];
