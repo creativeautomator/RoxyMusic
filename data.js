@@ -8670,5 +8670,80 @@ window.MUSIC_DATA = [
     "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQDfPGF2jhrLSaHKndWqpNJFAW3sEwOZ0WTmjxdITy3k24s?download=1",
     "notes": "",
     "dateAdded": "2026-09-09"
+  },
+  {
+    "id": "MS648",
+    "title": "INT House Mouse JLC KSK",
+    "moodGenre": [
+      "Upbeat",
+      "Synth",
+      "Lifestyle"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 133,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQAespDwadlYQKEs2mV59RWwAWABxjAJ0UeuBZELWA_qaUs?download=1",
+    "notes": "",
+    "dateAdded": "2026-09-10"
+  },
+  {
+    "id": "MS649",
+    "title": "INT Starfish JLC WFH RBL",
+    "moodGenre": [
+      "Upbeat",
+      "Synth",
+      "Lifestyle"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 81,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQC_eehCVK1NToqXtYxyVKraAYStx2bnwRY8vy8ewbhsn5Y?download=1",
+    "notes": "",
+    "dateAdded": "2026-09-10"
+  },
+  {
+    "id": "MS650",
+    "title": "INT PLUG NewSummer CMF WFH HAB",
+    "moodGenre": [
+      "Upbeat",
+      "Lifestyle"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 32,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQCygxbNnnNXRqC411E6bOS6Acvw2sOqu9KyI_Y-rkzMTD0?download=1",
+    "notes": "",
+    "dateAdded": "2026-09-10"
+  },
+  {
+    "id": "MS651",
+    "title": "INT PLUG Lakbay RBL (1)",
+    "moodGenre": [
+      "Lifestyle",
+      "Travel",
+      "Upbeat"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 33,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQAQNgxR5HETS5LENyirdzNAAZ73JSVZOGbm4Srv-tzMmYA?download=1",
+    "notes": "",
+    "dateAdded": "2026-09-10"
+  },
+  {
+    "id": "MS652",
+    "title": "INT BREATHY JLC WFH RBL",
+    "moodGenre": [
+      "Upbeat",
+      "Lifestyle",
+      "Beauty",
+      "Fashion"
+    ],
+    "tempoBpm": 0,
+    "durationSec": 69,
+    "instrumentation": [],
+    "audioFile": "https://gmanetwork-my.sharepoint.com/:u:/p/khtud/IQAowE1D1K2bTr10VbmkYB5fAaFVWNteAxwXr5p8UNOhwFI?download=1",
+    "notes": "",
+    "dateAdded": "2026-09-10"
   }
 ];
